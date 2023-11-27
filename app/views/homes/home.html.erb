@@ -1,0 +1,8 @@
+<h3>Hello</h3>
+<% if current_user %>
+ <p> You are a <%= current_user.email  %></p>
+ <p> You are a <%= current_user.role %></p>
+  <% if current_user.admin? %>
+  <p> some additional information for admin</p>
+    <% end %>
+<% end %>
